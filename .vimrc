@@ -9,6 +9,9 @@ source ~/.vim_runtime/vimrcs/extended.vim
 :set number relativenumber
 :set nu rnu
 
+" text wrapping
+:set tw=80
+
 try
 source ~/.vim_runtime/my_configs.vim
 catch
