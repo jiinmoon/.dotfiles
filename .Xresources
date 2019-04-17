@@ -1,0 +1,50 @@
+Xft.dpi:                    96
+Xft.antialias:              true
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+
+urxvt*foreground: white
+urxvt*background: black
+
+*color0:  #2E3436
+*color1:  #a40000
+*color2:  #4E9A06
+*color3:  #C4A000
+*color4:  #3465A4
+*color5:  #75507B
+*color6:  #ce5c00
+*color7:  #babdb9
+*color8:  #555753
+*color9:  #EF2929
+*color10: #8AE234
+*color11: #FCE94F
+*color12: #729FCF
+*color13: #AD7FA8
+*color14: #fcaf3e
+*color15: #EEEEEC
+
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.loginShell:           true
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+
+URxvt*shading: 15
+
+URxvt*saveLines: 12000
+
+URxvt*foreground: #657b83
+URxvt*background: #002b36
+
+URxvt*font: xft:DejaVu Sans mono:pixelsize=15
+URxvt*boldFont: xft:Monaco:bold:pixelsize=15
+URxvt*letterSpace: -1
+
+URxvt*scrollBar: true
+
+URxvt*scrollBar_right: false
+
+URxvt*scrollstyle: plain
+
+Urxvt.perl-ext-common: font-size
