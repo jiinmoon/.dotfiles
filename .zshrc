@@ -104,4 +104,4 @@ alias vi="vim"
 alias tmux="tmux -2"
 
 # Set No Caps - Caps to Esc
-setxkbmap -option "ctrl:nocaps"
+xmodmap -e "keycode 66 = Escape NoSymbol Escape"

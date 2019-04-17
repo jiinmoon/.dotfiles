@@ -47,4 +47,4 @@ URxvt*scrollBar_right: false
 
 URxvt*scrollstyle: plain
 
-Urxvt.perl-ext-common: font-size
+URxvt.perl-ext-common: font-size
