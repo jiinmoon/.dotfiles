@@ -1,5 +1,5 @@
 # Remap Caps Lock to ESC.
-setxkbmap -option caps:excape
+setxkbmap -option caps:escape
 
 # Black/White grid?
 xsetroot -solid black &

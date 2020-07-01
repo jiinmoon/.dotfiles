@@ -126,6 +126,7 @@ alias cp='cp -v'
 alias d='du -sh'
 alias grep='grep --color=auto -n'
 alias vi='vim'
+alias t='tree'
 
 alias tn='tmux new -s'
 alias ta='tmux a -t'
