@@ -134,6 +134,10 @@ alias tl='tmux ls'
 
 alias sc='scrot ~/Pictures/screenshots/%Y-%m-%d-%T.png'
 
+
+# enable bash-auto-complete
+source /etc/profile.d/bash_completion.sh
+
 # show git status
 COLOR_RED="\033[0;31m"
 COLOR_YELLOW="\033[0;33m"
