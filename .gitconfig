@@ -1,7 +1,149 @@
 [user]
-	email = jiinmoon@tutanota.com
-	name = Ji-In Moon
-
+    email = jiinmoon@tutanota.com
+    name = Ji-In Moon
+[core]
+    editor = vim
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    exlucdesfile = ~/.gitignore
+[color]
+    ui = auto
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
 [alias]
     lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     lg = !"git lg1"
+    # from pksunkara/.gitconfig
+    a = add --all
+    ai = add -i
+    #
+    ap = apply
+    as = apply --stat
+    ac = apply --check
+    #
+    ama = am --abort
+    amr = am --resolved
+    ams = am --skip
+    #
+    b = branch
+    ba = branch -a
+    bd = branch -d
+    bdd = branch -D
+    br = branch -r
+    bc = rev-parse --abbrev-ref HEAD
+    bu = !git rev-parse --abbrev-ref --symbolic-full-name "@{u}"
+    bs = !git-branch-status
+    #
+    c = commit
+    ca = commit -a
+    cm = commit -m
+    cam = commit -am
+    cem = commit --allow-empty -m
+    cd = commit --amend
+    cad = commit -a --amend
+    ced = commit --allow-empty --amend
+    #
+    cl = clone
+    cld = clone --depth 1
+    clg = !sh -c 'git clone git://github.com/$1 $(basename $1)' -
+    clgp = !sh -c 'git clone git@github.comL$1 $(basename $1)' -
+    #
+    cp = cherry-pick
+    cpa = cherry-pick --abort
+    cpc = cherry-pick --continue
+    #
+    d = diff
+    dp = dif --patience
+    dc = diff --cached
+    dk = diff --check
+    dck = diff --cached --check
+    dt = difftool
+    dct = difftool --cached
+    #
+    f = fetch
+    fo = fetch origin
+    fu = fetch upstream
+    #
+    fp = format-patch
+    #
+    fk = fsck
+    #
+    g = grep -p
+    #
+    ls = ls-files
+    lsf = !git ls-files | grep -i
+    #
+    m = merge
+    ma = merge --abort
+    mc = merge --continue
+    ms = merge --skip
+    #
+    o = checkout
+    om = checkout master
+    ob = checkout -b
+    #
+    pr = prune -v
+    #
+    ps = push
+    psf = push -f
+    psu = push -u
+    pst = push --tags
+    #
+    pso = push origin
+    psao = push --all origin
+    psfo = push -f origin
+    psuo = push -u origin
+    #
+    pl = pull
+    pb = pull --rebase
+    #
+    rb = rebase
+    rba = rebase --abort
+    rbc = rebase --continue
+    rbi = rebase --interactive
+    rbs = rebase --skip
+    #
+    re = reset
+    rh = reset HEAD
+    reh = reset --hard
+    rem = reset --mixed
+    res = reset --soft
+    #
+    r = remote
+    ra = remote add
+    rr = remote rm
+    rv = remove -v
+    rn = remote rename
+    #
+    s = status
+    sb = status -s -b
+    #
+    sa = stash apply
+    sc = stash clear
+    sd = stash drop
+    sl = stash list
+    sp = stash pop
+    ss = stash save
+    sw = stash show
+    #
+    t = tag
+    #
+    w = show
+    wp = show -p
+    wr = show -p --no-color
+
