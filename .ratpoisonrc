@@ -1,0 +1,10 @@
+startup_message off
+
+# Change escape key from CRTL + t to Windows key.
+escape Super_L
+
+# Key Binds.
+bind f exec firefox
+
+# Start-ups.
+exec nitrogen --restore
