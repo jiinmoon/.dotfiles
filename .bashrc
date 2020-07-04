@@ -134,6 +134,8 @@ alias tl='tmux ls'
 
 alias sc='scrot ~/Pictures/screenshots/%Y-%m-%d-%T.png'
 
+alias docker-clean-up='sudo docker rm $(sudo docker ps -a -f status=exited -q)
+&& sudo docker rmi $(sudo docker images -f "dangling=true" -q)'
 
 # enable bash-auto-complete
 source /etc/profile.d/bash_completion.sh
