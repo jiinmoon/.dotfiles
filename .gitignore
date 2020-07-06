@@ -20,3 +20,6 @@
 *.rar
 *.tar
 *.zip
+
+# vagrant specfic
+*.vagrant

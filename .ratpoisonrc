@@ -3,8 +3,37 @@ startup_message off
 # Change escape key from CRTL + t to Windows key.
 escape Super_L
 
-# Key Binds.
-bind f exec firefox
+# Set styles.
+set border 1
+set barborder 1
+set padding 0 0 0 0
+set barpadding 1 1
 
-# Start-ups.
+set bargravity c
+
+set fgcolor white
+set bgcolor black
+
+set winname title
+set winfmt [%n] %s %t
+
+# Key Binds.
+bind c exec x-terminal-emulator & sleep .8s && transset -a .80
+
+bind d dedicate
+bind C-d dedicate
+
+bind f exec firefox
+bind C-f exec firefox
+
+# q to save frames; C-q to restore them.
+bind q exec ratpoison -c "setenv fs1 `ratpoison -c 'fdump'`"
+bind C-q exec ratpoison -c "frestore `ratpoison -c 'getenv fs1'`"
+
+bind u undo
+bind C-u undo
+
+# Start-up apps.
+#
+# Restore wallpaper.
 exec nitrogen --restore
