@@ -3,32 +3,42 @@ startup_message off
 # Change escape key from CRTL + t to Windows key.
 escape Super_L
 
-# Set styles.
+# set styles.
 set border 1
 set barborder 1
-set padding 0 0 0 0
+#set padding 0 0 0 0
 set barpadding 1 1
-
+# 
 set bargravity c
 
-set fgcolor white
-set bgcolor black
+# not used with nitrogen.
+#set fgcolor white
+#set bgcolor black
+# focused frame border color.
+set fwcolor black
+# unfocused frame border color.
+set bwcolor white
 
+# change window titles.
 set winname title
 set winfmt [%n] %s %t
 
-# Key Binds.
+### Key Binds. ###
+
+# terminal; set transparency automatically.
 bind c exec x-terminal-emulator & sleep .8s && transset -a .80
 
 bind d dedicate
 bind C-d dedicate
 
+# firefox
 bind f exec firefox
 bind C-f exec firefox
 
-# q to save frames; C-q to restore them.
-bind q exec ratpoison -c "setenv fs1 `ratpoison -c 'fdump'`"
-bind C-q exec ratpoison -c "frestore `ratpoison -c 'getenv fs1'`"
+# q to restore frames.
+# C-q to save them.
+bind q exec ratpoison -c "frestore `ratpoison -c 'getenv fs1'`"
+bind C-q exec ratpoison -c "setenv fs1 `ratpoison -c 'fdump'`"
 
 bind u undo
 bind C-u undo
