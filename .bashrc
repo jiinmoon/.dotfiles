@@ -128,9 +128,9 @@ alias grep='grep --color=auto -n'
 alias vi='vim'
 alias t='tree'
 
-alias tn='tmux new -s'
-alias ta='tmux a -t'
-alias tl='tmux ls'
+alias tn='tmux -2 new -s'
+alias ta='tmux -2 a -t'
+alias tl='tmux -2 ls'
 
 alias sc='scrot ~/Pictures/screenshots/%Y-%m-%d-%T.png'
 

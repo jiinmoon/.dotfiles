@@ -1,4 +1,4 @@
-startup_message off
+set startupmessage off
 
 # Change escape key from CRTL + t to Windows key.
 escape Super_L
