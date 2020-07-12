@@ -6,6 +6,7 @@ TODO
 
 - Make a complete list of packages required.
 - Create a automated script for quick-setup.
+- Add in *spacevim* and *spacemacs* setup.
 
 
 What is this?

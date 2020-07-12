@@ -20,6 +20,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'preservim/nerdtree'
+Plugin 'itchyny/lightline.vim'
+Plugin 'vim-scripts/taglist.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -42,6 +44,10 @@ filetype plugin indent on    " required
 
 " Enable syntax highlighting
 syntax on
+
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
 
 " Better command-line completion
 set wildmenu
