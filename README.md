@@ -46,7 +46,7 @@ Clone this `.dotfile` repository; to make it simple, let's set-up our GitHub
 access now as well. [Read more at
 here](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). Basically, we will create a new pub-private key for ssh, and register our public key to the GitHub account.
 
-    sudo ssh-keygen -t rsa -b 4096 'my-email`
+    sudo ssh-keygen -t rsa -b 4096 -C "jiinmoon@tutanota.com"
     eval $(ssh-agent)
     ssh-add ~/.ssh/id_rsa
     git clone git@github.com:jiinmoon/.dotfiles.git
@@ -92,15 +92,25 @@ many plugins that we are going to use - namely,
 [Vundle](https://github.com/VundleVim/Vundle.vim) and
 [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe).
 
-The needed plugins are already specified in the `.vimrc` already - thus, simply
-install using following command inside the vim `:PluginInstall`.
+The needed plugins are already specified in the `.vimrc` already - thus, we
+would first install the Vundle package manager.
+
+    git clone http://github.com/VundleVim/VUndle.vim.git
+    ~/.vim/bundle/Vundle.vim
+
+Then, open `vim` and install using following command: `:PluginInstall`.
 
 **YouCompleteMe** has to be compiled to build its library for auto-completion
 to take place. **Assume we have installed all necessary components** (i.e. GO,
 node, cmake, build-essentials, ...). For more, visit YCM git page.
 
+    sudo apt install python3-dev cmake ...
     cd ~/.vim/bundle/YouCompleteMe
     python3 install.py --all
+
+**Taglist** plugin also requires c-tags to work correctly.
+
+    sudo apt install exuberant-ctags
 
 Vim should work now.
 
