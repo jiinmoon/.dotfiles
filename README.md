@@ -71,8 +71,7 @@ Two plugins that we use here are `bash-completion` and `bash-git-prompt`.
 
 `bash-git-prompt` is used to display git status on the command prompt.
 
-    git clone https://github.com/magicmonty/bash-git-prompt.git
-    ~/.bash-git-prompt -depth=1
+    git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 
 The source the `.bashrc` file and is complete.
 
@@ -95,8 +94,7 @@ many plugins that we are going to use - namely,
 The needed plugins are already specified in the `.vimrc` already - thus, we
 would first install the Vundle package manager.
 
-    git clone http://github.com/VundleVim/VUndle.vim.git
-    ~/.vim/bundle/Vundle.vim
+    git clone http://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 Then, open `vim` and install using following command: `:PluginInstall`.
 
