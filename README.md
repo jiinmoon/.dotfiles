@@ -46,7 +46,7 @@ Clone this `.dotfile` repository; to make it simple, let's set-up our GitHub
 access now as well. [Read more at
 here](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). Basically, we will create a new pub-private key for ssh, and register our public key to the GitHub account.
 
-    sudo ssh-keygen -t rsa -b 4096 -C "jiinmoon@tutanota.com"
+    ssh-keygen -t rsa -b 4096 -C "jiinmoon@tutanota.com"
     eval $(ssh-agent)
     ssh-add ~/.ssh/id_rsa
     git clone git@github.com:jiinmoon/.dotfiles.git
@@ -102,17 +102,25 @@ Then, open `vim` and install using following command: `:PluginInstall`.
 to take place. **Assume we have installed all necessary components** (i.e. GO,
 node, cmake, build-essentials, ...). For more, visit YCM git page.
 
-    sudo apt install python3-dev cmake ...
+For debian,
+
+    sudo apt install python3-dev cmake build-esential
+
+For fedora,
+
+    sudo dnf install cmake make gcc-c++ python3-devel
+
+Then, compile YCM.
+
     cd ~/.vim/bundle/YouCompleteMe
     python3 install.py --all
 
-**Taglist** plugin also requires c-tags to work correctly.
+**Taglist** plugin also requires c-tags to work correctly in some distros such
+as debian.
 
     sudo apt install exuberant-ctags
 
 Vim should work now.
-
-
 
 
 
