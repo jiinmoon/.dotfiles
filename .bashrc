@@ -147,6 +147,14 @@ if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
     source $HOME/.bash-git-prompt/gitprompt.sh
 fi
 
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
+# golang
+export PATH=$PATH:/usr/local/go/bin
+
 # show git status
 # COLOR_RED="\033[0;31m"
 # COLOR_YELLOW="\033[0;33m"
