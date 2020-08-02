@@ -148,6 +148,9 @@ as debian does not have this.
 
     $ sudo apt install exuberant-ctags
 
+**vim-go** plugin requires external binaries for nice things such as `:GoDef`
+and so on. Install it in the vim by running the command `:GoInstallBinaries`.
+
 Vim should work now.
 
 

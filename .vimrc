@@ -16,12 +16,19 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " additional plugins
 Plugin 'ycm-core/YouCompleteMe'
+let g:ycm_global_ycm_extra_conf = '/home/jmoon/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'preservim/nerdtree'
 Plugin 'itchyny/lightline.vim'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'fatih/vim-go'
+Plugin 'morhetz/gruvbox'
+autocmd vimenter * colorscheme gruvbox
+Plugin 'frazrepo/vim-rainbow'
+let g:rainbow_active = 1
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -39,7 +46,6 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 " <-- End -->
-
 
 
 " Enable syntax highlighting
