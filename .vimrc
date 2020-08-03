@@ -26,9 +26,15 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'fatih/vim-go'
 Plugin 'morhetz/gruvbox'
-autocmd vimenter * colorscheme gruvbox
+"let g:gruvbox_italic=1
+let g:gruvbox_italicize_strings=0
+let g:gruvbox_improved_strings=1
 Plugin 'frazrepo/vim-rainbow'
 let g:rainbow_active = 1
+Plugin 'Yggdroot/indentline'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+Plugin 'airblade/vim-gitgutter'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -119,3 +125,9 @@ set background=dark
 
 " sudo save trick
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
+" Change colorscheme to gruvebox
+autocmd VimEnter * colorscheme gruvbox
+
+" Enable Rainbow Parentheses
+autocmd VimEnter * RainbowLoad
