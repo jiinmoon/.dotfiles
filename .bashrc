@@ -152,8 +152,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 
-# golang
+# set go paths
 export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/goworkspace
 
 # show git status
 # COLOR_RED="\033[0;31m"
