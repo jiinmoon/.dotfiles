@@ -143,6 +143,15 @@ Then, compile YCM.
     $ cd ~/.vim/bundle/YouCompleteMe
     $ python3 install.py --all
 
+For NodeJS, YCM requires proper set-up of **tern** which is now outdated and
+uses **typescript engine** instead. But for now, tern works. This can be done
+with either setting up `tern-project` file in each of the project directory, or
+`tern-config` for global settings. Simplest solution is to:
+
+    $ ln -s
+    ~/.vim/bundle/YouCompleteMe/third_party/tern_runtime/node_modules/tern/.tern-project
+    ~/.tern-project
+
 **Taglist** plugin requires c-tags to work correctly - in some distros such
 as debian does not have this.
 
