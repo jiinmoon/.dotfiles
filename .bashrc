@@ -115,6 +115,7 @@ fi
 ##### Custom Mods #####
 #
 # custom aliases
+alias emacs='emacs -nw'
 alias untar='tar -zxvf'
 alias wget='wget -c'
 alias ping='ping -c 4'

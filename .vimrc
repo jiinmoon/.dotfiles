@@ -34,6 +34,7 @@ let g:rainbow_active = 1
 Plugin 'Yggdroot/indentline'
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 Plugin 'airblade/vim-gitgutter'
+Plugin 'easymotion/vim-easymotion' 
 
 
 " All of your Plugins must be added before the following line
@@ -102,7 +103,7 @@ set cmdheight=2
 set notimeout ttimeout ttimeoutlen=200
 
 " Set F11 to toggle between paste and nopaste
-set pastetoggle=<F11>
+set pastetoggle=<F10>
 
 " Indent Options
 set shiftwidth=4
