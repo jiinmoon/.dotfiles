@@ -132,3 +132,10 @@ autocmd VimEnter * colorscheme gruvbox
 
 " Enable Rainbow Parentheses
 autocmd VimEnter * RainbowLoad
+
+" Enable autofold
+augroup remember_folds
+  autocmd!
+  au BufWinLeave ?* mkview 1
+  au BufWinEnter ?* silent! loadview 1
+augroup END
