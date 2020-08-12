@@ -107,6 +107,9 @@ tpm will indicate when the installation is finished.
 Vim
 ---
 
+Note: now I recommend `xvim` instead for clipboard capability with
+x environments.
+
 The reason why we have installed `vim-gtk` is that we wanted to avoid the hassle
 of compiling from the source. Vim can be obtained mainly as a binary
 distribution, but in Debian/Ubuntu, `vim` package does not have a support for
