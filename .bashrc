@@ -157,6 +157,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/goworkspace
 
+# set emacs paths
+export PATH=$PATH:~/.emacs.d/bin
+
 # show git status
 # COLOR_RED="\033[0;31m"
 # COLOR_YELLOW="\033[0;33m"
