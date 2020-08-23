@@ -160,6 +160,9 @@ export GOPATH=$HOME/goworkspace
 # set emacs paths
 export PATH=$PATH:~/.emacs.d/bin
 
+# wrap sbcl so that keys work as they should be
+alias sbcl='rlwrap sbcl'
+
 # show git status
 # COLOR_RED="\033[0;31m"
 # COLOR_YELLOW="\033[0;33m"
