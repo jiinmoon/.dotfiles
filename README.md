@@ -151,8 +151,8 @@ $ sudo python3 install.py --all --system-libclang
 
 #### Configuring `tmux`
 
-All the necessary configurations are already within the `.tmux.conf`
-- including some useful keybinds and shortcuts.
+All the necessary configurations are already within the `.tmux.conf` including
+some useful keybinds and shortcuts.
 
 ```bash
 $ brew install tmux
@@ -201,12 +201,11 @@ here](https://help.github.com/en/github/authenticating-to-github/generating-a-ne
 Symbolic link the configuration files that you need as appropriate. Below are
 few examples:
 
-    $ ln -s /home/user-name/.dotfiles/.xinitrc /home/user-name/.xinitrc
-    $ ln -s /home/user-name/.dotfiles/.gitconfig /home/user-name/.gitconfig
+    $ ln -s /home/user-name/.dotfiles/forlinux/.xinitrc /home/user-name/.xinitrc
+    $ ln -s /home/user-name/.dotfiles/forlinux/.gitconfig /home/user-name/.gitconfig
 
 The basic-set up is done. Now, we will have to configure the some of the
 applications manually.
-
 
 Bash
 ----
