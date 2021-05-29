@@ -158,6 +158,16 @@ some useful keybinds and shortcuts.
 $ brew install tmux
 ```
 
+#### Note on Rust
+
+Instead of installing Rust language with brew, should install it first by
+downloading the `rustup` - tool chain manager. With brew method, IntelliJ IDEA
+rust plug-in cannot seem to find the library.
+
+```bash
+$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
 ---
 
 ### For Linux
