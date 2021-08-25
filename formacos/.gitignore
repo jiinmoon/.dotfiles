@@ -27,6 +27,10 @@
 # Intellij IDEA
 .idea
 
+# MacOS
+
+.DS_Store
+
 # --- Start Python ---
 # Byte-compiled / optimized / DLL files
 __pycache__/
